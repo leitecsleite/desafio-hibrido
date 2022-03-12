@@ -1,0 +1,12 @@
+/*@import url("./style/global.css");*/
+
+:root{
+    --cinza--:#f2f2f2;
+}
+
+body {
+  width: 100vw;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+

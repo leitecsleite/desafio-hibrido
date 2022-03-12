@@ -1,0 +1,45 @@
+
+
+.product{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 0 1.4rem;
+    width: 100%;
+    height: 48rem;
+    margin: 0;
+    margin-top: 4rem;
+}
+
+.productImages{
+    width: 65%;
+    height: 100%;
+
+    display: flex;
+ 
+
+}
+
+.productImages-wrapper{
+    width: 20%;
+    height: 100%;
+ 
+}
+
+.productImages-sku{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .01rem solid black
+}
+.productImages-sku >img{
+   width: 30rem;
+}
+
+.productInfo{
+    width: 37%;
+    height: 100%;
+  
+}
