@@ -3,9 +3,7 @@ import React from "react";
 import { useFetch } from "../Hooks/usefetch";
 
 const defaultUser = {
-  title: 'O Título do contexto',
-    body: 'O corpo do contexto',
-    counter: 0
+    counter: "0"
 }
 
 export const GlobalContext = createContext(); 

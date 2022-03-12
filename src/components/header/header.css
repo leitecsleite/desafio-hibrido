@@ -6,7 +6,7 @@
 }
 
 .aplication{
-    width: 100vw;
+    width: 100%;
 }
 
 .hibrido-header {
@@ -98,9 +98,18 @@
 }
 
 .hibrido-input>img{
-    width: 1.5rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     margin-left: 1rem;
+}
+
+.hibrido-input .numero-de-produto{
+    color: rgb(10, 150, 231);
+    font-weight: 700;
+
+    position: relative;
+    right: 2rem;
+    top: 0.4rem; 
 }
 
 .hibrido-input-group{
@@ -122,6 +131,15 @@
     width: 1rem;
     height: 1rem;
     margin-left: 1rem;
+}
+
+
+.desativado{
+    display: none;
+}
+
+.hibrido-input .ativado{
+    display: inline;
 }
 
 .icons{

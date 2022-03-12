@@ -6,17 +6,24 @@ import lupa from "../../../public/img/icons8-search-24.png";
 import bolsa from "../../../public/img/icons-bolsa-2.png";
 import location from '../../../public/img/icons8-location-64.png';
 import card from '../../../public/img/icons8-credit-card-96.png';
-import { useEffect } from "react/cjs/react.production.min";
+import { useContext } from "react";
+import { GlobalContext } from "../../context";
+
 import icons_menu from "../../../public/img/icons8-menu.svg";
-import useWindowDimensions from "../../Hooks/useWindowDimensions";
 
 import "./header.css";
 
 export const Header = () => {
   const [menuMbobile, setMenuMobile] = useState("mobile");
-  const { height, width } = useWindowDimensions();
+  
 
+  const theContext = useContext(GlobalContext);
+    const {contextState: {body, counter},
+          contextState,
+          setContextState} = theContext; 
   const [active, setActive] = useState(true);
+   
+
 
   function menu() {
     if (active) {
@@ -83,7 +90,8 @@ export const Header = () => {
                   <img src={lupa} alt="search" />
                   <input type="text" />
                 </div>
-                <img src={bolsa} alt="" />
+                <img src={bolsa} alt="sacola de compra" />
+                <span className='numero-de-produto'>{counter}</span>
               </label>
             </div>
             <div className="icons">
