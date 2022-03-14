@@ -36,7 +36,7 @@ export const Main = () => {
         {produtoSku &&
           produtoSku.map((produto) => (
             <main className="reactProducPage">
-              <div className="product">
+              <div className="product" key={produto.id}>
                 <ProductImages
                   image ={produto.image}
                 />

@@ -93,6 +93,10 @@
     text-decoration: none;
 }
 
+.navbar-bar >li:hover{
+  border-bottom:2px solid #000;
+}
+
 .hibrido-input{
     display: flex;
     justify-content: space-between;
