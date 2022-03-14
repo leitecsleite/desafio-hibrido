@@ -13,18 +13,15 @@
   flex-direction: column;
 }
 
-.productImages-wrapper .box-image{
+.productImages-wrapper .box-image {
   width: 30%;
-  border: 3px solid #f2f2f2; 
+  border: 3px solid #f2f2f2;
   margin-left: 1rem;
 }
 
-.productImages-wrapper .box-image>img{
+.productImages-wrapper .box-image > img {
   width: 100%;
-
-
 }
-
 
 .productImages-sku {
   width: 100%;
@@ -43,13 +40,13 @@
   display: flex;
 }
 
-.productImages-sku .productImages-sku-slider::-webkit-scrollbar{
-    display: none;
+.productImages-sku .productImages-sku-slider::-webkit-scrollbar {
+  display: none;
 }
 
 .productImages .item-sku {
- /* margin: 1.2rem 11rem 0 1.2rem;*/
- margin: 1.2rem 30rem 0 9rem;
+  /* margin: 1.2rem 11rem 0 1.2rem;*/
+  margin: 1.2rem 30rem 0 9rem;
   width: 100%;
   height: 100%;
   border-radius: 1rem;
@@ -64,57 +61,51 @@
   width: 30rem;
 }
 
-
-.productImages-sku .buttons-slider-image-sku{
-   width: 100%;
-   margin-top: -25rem;
-   margin-left: -8rem;
-   display: flex;
-   justify-content: space-between;
- 
+.productImages-sku .buttons-slider-image-sku {
+  width: 100%;
+  margin-top: -25rem;
+  margin-left: -8rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-.productImages-sku .buttons-slider-image-sku>button {
-    
-    background-color: transparent;
-    border:none;
-    cursor: pointer;
-    width: 20%;
-    margin-top: 3rem;
+.productImages-sku .buttons-slider-image-sku > button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  margin-top: 3rem;
 }
 
-.productImages-sku .buttons-slider-image-sku> button>img{
-    width: 3rem;
+.productImages-sku .buttons-slider-image-sku > button > img {
+  width: 3rem;
 }
 
-.productImages-sku .buttons-slider-image-sku> button:first-child img {
-    transform: rotate(180deg);
+.productImages-sku .buttons-slider-image-sku > button:first-child img {
+  transform: rotate(180deg);
 }
 
-.button-rigth{
-    position: relative;
-    right: 0;
+.button-rigth {
+  position: relative;
+  right: 0;
 }
 
-@media(max-width: 1577px){
-  .productImages-sku .productImages-sku-slider{
+@media (max-width: 1577px) {
+  .productImages-sku .productImages-sku-slider {
     width: 40rem;
   }
 
-  .productImages .item-sku{
-      margin: 1.2rem 13rem 0 2rem;
+  .productImages .item-sku {
+    margin: 1.2rem 13rem 0 2rem;
   }
-  .productImages  .diferent{
+  .productImages .diferent {
     margin-right: 0rem !important;
   }
 }
 
-
-
-
-@media(max-width:1323px){
-      .productImages-wrapper {
-     display: none;
+@media (max-width: 1323px) {
+  .productImages-wrapper {
+    display: none;
   }
 }
 
@@ -128,45 +119,39 @@
     width: 100%;
   }
 
-  .productImages-sku .productImages-sku-slider{
+  .productImages-sku .productImages-sku-slider {
     width: 40rem;
   }
 
-  .productImages .item-sku{
-      margin: 1.2rem 9rem 0 2rem;
+  .productImages .item-sku {
+    margin: 1.2rem 9rem 0 2rem;
   }
 }
 
-
-
-@media (max-width:1191px){
-    .productImages-sku{
-        height: 50rem;
-    }
+@media (max-width: 1191px) {
+  .productImages-sku {
+    height: 50rem;
+  }
 }
 
-@media(max-width: 928px){
-    .productImages-sku{
-      flex-direction: column;
-    }
-    .productImages-sku .buttons-slider-image-sku{
-        margin-top: 0;
-        width: 100%;
-        margin:0
-     } 
- 
-
-
-
-}
-
-@media(max-width:509px){
-   .productImages-sku{
-       margin-top: -15rem;
-   }
-   .productImages-sku .buttons-slider-image-sku{
+@media (max-width: 928px) {
+  .productImages-sku {
+    flex-direction: column;
+  }
+  .productImages-sku .buttons-slider-image-sku {
     margin-top: 0;
- }
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 509px) {
+  .productImages-sku {
+    margin-top: -15rem;
+  }
+  .productImages-sku .buttons-slider-image-sku {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 508px) {
@@ -191,10 +176,8 @@
     display: flex;
   }
 
-  .productImages-sku .buttons-slider-image-sku{
-     margin-bottom: 3rem;
-     margin-top: -10rem;
+  .productImages-sku .buttons-slider-image-sku {
+    margin-bottom: 3rem;
+    margin-top: -10rem;
   }
-
- 
 }

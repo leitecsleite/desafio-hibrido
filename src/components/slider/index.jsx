@@ -38,8 +38,12 @@ export const Slider = () => {
               <img src={item.image} alt="" />
               <div className="info">
                 <span className="name">{item.title}</span>
-                <span className="price"><strong>R$ {item.price}</strong></span> 
-                <span className="comprar"><p>COMPRAR</p></span>
+                <span className="price">
+                  <strong>R$ {item.price}</strong>
+                </span>
+                <span className="comprar">
+                  <p>COMPRAR</p>
+                </span>
               </div>
             </div>
           );

@@ -1,9 +1,8 @@
-import './footer.css';
-import hibrido from '../../../public/img/logo-hibrido.svg';
-import whatsapp from '../../../public/img/icons8-whatsapp.svg';
-import facebook from '../../../public/img/icons8-facebook.svg'; 
-import instagram from '../../../public/img/icons8-instagram.svg'; 
-
+import "./footer.css";
+import hibrido from "../../../public/img/logo-hibrido.svg";
+import whatsapp from "../../../public/img/icons8-whatsapp.svg";
+import facebook from "../../../public/img/icons8-facebook.svg";
+import instagram from "../../../public/img/icons8-instagram.svg";
 
 export const Footer = () => {
   return (
@@ -14,9 +13,21 @@ export const Footer = () => {
             <img src={hibrido} alt="logo" />
             <div className="logo">
               <span>Siga-nos: </span>
-              <img src={whatsapp}alt="contato whatsApp" className='social-midia-icone' />
-              <img src={facebook} alt="Facebook"  className='social-midia-icone'/>
-              <img src={instagram} alt="Instagram" className='social-midia-icone' />
+              <img
+                src={whatsapp}
+                alt="contato whatsApp"
+                className="social-midia-icone"
+              />
+              <img
+                src={facebook}
+                alt="Facebook"
+                className="social-midia-icone"
+              />
+              <img
+                src={instagram}
+                alt="Instagram"
+                className="social-midia-icone"
+              />
             </div>
           </div>
 
@@ -51,32 +62,30 @@ export const Footer = () => {
                   </li>
                 </ul>
               </div>
-               <div className="newsletter-section">
+              <div className="newsletter-section">
                 <div className="text">
-                    <h4>Receba nossas promoções</h4>
+                  <h4>Receba nossas promoções</h4>
                 </div>
                 <div className="newsletter">
-                    <form action="" method="post">
-                        <label>
-                            <input type="text"  placeholder='Digite seu email'/>
-                        </label>
-                    </form>
+                  <form action="" method="post">
+                    <label>
+                      <input type="text" placeholder="Digite seu email" />
+                    </label>
+                  </form>
 
-                    <button className="button-newsletter">Enviar</button>
+                  <button className="button-newsletter">Enviar</button>
                 </div>
 
                 <div className="logos"></div>
-            </div>
-            </div>
-           
-          </div>
-
-          <div className='autoria'>
-            <div className='copyright-span'>
-              Híbrido e-commerce Rua 21 de abril número 1114 - TERESINA -PI 
+              </div>
             </div>
           </div>
 
+          <div className="autoria">
+            <div className="copyright-span">
+              Híbrido e-commerce Rua 21 de abril número 1114 - TERESINA -PI
+            </div>
+          </div>
         </section>
       </footer>
     </>
