@@ -1,6 +1,9 @@
-.reactProductPage{
+.reactProducPage{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
 }
 
 .product{
@@ -15,46 +18,3 @@
     margin-top: 4rem;
 }
 
-.productImages{
-    width: 65%;
-    height: 100%;
-
-    display: flex;
- 
-
-}
-
-.productImages-wrapper{
-    width: 20%;
-    height: 100%;
- 
-}
-
-.productImages-sku{
-    width: 80%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  /*  border: .01rem solid black*/
-}
-.productImages-sku >img{
-   width: 30rem;
-}
-
-@media(max-width:1191px){
-    .product{
-        flex-direction: column;
-        height: auto;
-    }
-
-    .productImages{
-        width: 100%;
-    }
-}
-
-@media(max-width:878px){
-    .productImages-sku >img{
-        width: 100%;
-     }
-}

@@ -2,9 +2,10 @@ import React from "react";
 import { useState } from "react";
 import { useFetch } from "../../Hooks/usefetch";
 import { ProductInfo } from "./productInfo/index";
+import { ProductImages } from "./productImages";
 
 import "./main.css";
-import { Slider } from "../slider";
+import {Slider} from "../slider";
 
 export const Main = () => {
   const [result, options] = useFetch("https://fakestoreapi.com/products/");
@@ -24,22 +25,22 @@ export const Main = () => {
       <>
         {produtoSku &&
           produtoSku.map((produto) => (
-            <main className="reactProducPage" key={produto.id}>
+            <main className="reactProducPage">
               <div className="product">
-                <section className="productImages">
-                  <div className="productImages-wrapper"></div>
-                  <div className="productImages-sku">
-                    <img src={produto.image} alt="Produto Sku" />
-                  </div>
-                </section>
+                <ProductImages
+                  image ={produto.image}
+                />
                 <ProductInfo
                   text={produto.title}
                   description={produto.description}
-                  img={produto.image} 
+                  img={produto.image}
                 />
               </div>
+              <Slider/>
             </main>
-          ))}   
+          ))}
+
+      
       </>
     );
   }
