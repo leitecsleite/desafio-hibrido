@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useContext } from "react";
 import { GlobalContext } from "../../../context";
-import "./ProductInfo.css";
+import "./productInfo.css";
 import free from "../../../../public/img/icons8-free-shipping-50.png";
 
 export const ProductInfo = (props) => {
