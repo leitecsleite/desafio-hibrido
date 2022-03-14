@@ -90,6 +90,10 @@
     align-items: center;
 }
 
+.productInfo .buybutton:hover{
+    background: rgb(26, 25, 25);
+}
+
 .productInfo .buybutton .buybutton-name {
     width: 70%;
     color: white;

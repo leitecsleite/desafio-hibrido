@@ -107,6 +107,10 @@
     align-items: center;
 }
 
+.container .carousel .item .info .comprar:hover{
+    background: rgb(26, 25, 25);
+}
+
 .container .carousel .item .info .comprar>p{
     font-weight: 700;
  
