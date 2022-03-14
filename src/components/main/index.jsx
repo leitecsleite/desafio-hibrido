@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useFetch } from "../../Hooks/usefetch";
 import { ProductInfo } from "./productInfo/index";
 import { ProductImages } from "./productImages";
+import  imgemBranco from '../../../public/img/branco-default.png'
 
 import "./main.css";
 import {Slider} from "../slider";
@@ -18,7 +19,7 @@ export const Main = () => {
         <main className="reactProducPage">
               <div className="product">
               <ProductImages
-                  
+                  image={imgemBranco}
                 />
                 <ProductInfo
                   
