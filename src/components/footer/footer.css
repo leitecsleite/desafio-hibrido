@@ -126,6 +126,7 @@
     margin-top: .9rem;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 
 .hibrido-footer .newsletter-section .newsletter> form input {
@@ -148,6 +149,26 @@
     color: #fff;
     letter-spacing: .04rem;
     text-align: center;
+ }
+
+ .hibrido-footer .section01-footer .autoria{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   margin-top: 3rem;
+   margin-bottom: 2.5rem;
+   padding-top:2rem;
+ }
+
+ .hibrido-footer .section01-footer .autoria .copyright-span{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+
+   font-size: .7rem;
+   line-height: .8rem;
+   color: #898a89;
  }
 
  @media(max-width:777px){

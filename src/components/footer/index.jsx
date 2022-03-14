@@ -70,6 +70,13 @@ export const Footer = () => {
             </div>
            
           </div>
+
+          <div className='autoria'>
+            <div className='copyright-span'>
+              Híbrido e-commerce Rua 21 de abril número 1114 - TERESINA -PI 
+            </div>
+          </div>
+
         </section>
       </footer>
     </>

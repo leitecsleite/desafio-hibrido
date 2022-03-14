@@ -10,12 +10,22 @@ import {Slider} from "../slider";
 export const Main = () => {
   const [result, options] = useFetch("https://fakestoreapi.com/products/");
   const produtoSku = result.slice(1, 2);
-  console.log(result);
 
   if (options) {
     return (
       <div>
         <h1>Carregando...</h1>
+        <main className="reactProducPage">
+              <div className="product">
+              <ProductImages
+                  
+                />
+                <ProductInfo
+                  
+                />
+              </div>
+              <Slider/>
+          </main>
       </div>
     );
   }

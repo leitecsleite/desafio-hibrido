@@ -8,14 +8,12 @@ export const ProductImages = ({ image }) => {
 
   function handleLeftClickSku(e) {
     e.preventDefault();
-    console.log(carouselSkuImg.current.offsetWidth);
     carouselSkuImg.current.scrollLeft -=
       carouselSkuImg.current.offsetWidth + 210;
   }
 
   function handRigthtClicSku(e) {
     e.preventDefault();
-    console.log(carouselSkuImg.current.offsetWidth);
     carouselSkuImg.current.scrollLeft +=
       carouselSkuImg.current.offsetWidth + 120;
   }

@@ -53,6 +53,8 @@
     background: white;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 2rem 0;
 
 }
 

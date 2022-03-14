@@ -91,6 +91,7 @@ export const Header = () => {
                   <input type="text" />
                 </div>
                 <img src={bolsa} alt="sacola de compra" />
+                
                 <span className='numero-de-produto'>{counter}</span>
               </label>
             </div>

@@ -1,52 +1,60 @@
 import { useState } from "react";
 import { useContext } from "react";
 import { GlobalContext } from "../../../context";
-import "./ProductInfo.css"; 
-import free from '../../../../public/img/icons8-free-shipping-50.png'
+import "./ProductInfo.css";
+import free from "../../../../public/img/icons8-free-shipping-50.png";
 
 export const ProductInfo = (props) => {
-   const [count, setCount] = useState(0)
-   const [classAtive, setClasseAtive] = useState('desative')
-   const [conteudo, setConteudo] = useState('')
-   const [mensageFrete, setMensageFrete] = useState ('desativado')
+  const [count, setCount] = useState(0);
+  const [classAtive, setClasseAtive] = useState("desative");
+  const [conteudo, setConteudo] = useState("");
+  const [mensageFrete, setMensageFrete] = useState("desativado");
 
-   const theContext = useContext(GlobalContext);
-   const {contextState: {body, counter},
-         contextState,
-         setContextState} = theContext; 
+  const theContext = useContext(GlobalContext);
+  const {
+    contextState: { body, counter },
+    contextState,
+    setContextState,
+  } = theContext;
 
-   function countSkuLess(){
+  function countSkuLess() {
+    if (count >= 1) {
+      const numberSku = count - 1;
+      setCount(numberSku);
+      setContextState({ ...contextState, counter: numberSku });
 
-     if( count >=1){
-      const numberSku = count - 1
-      setCount(numberSku)
-      setContextState({...contextState, counter: numberSku})
-
-      if(numberSku < 10){
-        setMensageFrete('desativado')
+      if (numberSku < 10) {
+        setMensageFrete("desativado");
       }
-     }
-     
-
-
-     if(count <= 0){
-      setContextState({...contextState, counter: ''})
-     }
-   }
-
-   function countSkuMore(){
-     const numberSku = count + 1
-     setCount(numberSku)
-     setContextState({...contextState,counter: numberSku})
-
-     if(numberSku >=10){
-      setMensageFrete('mensagem-frete-gratis')
-      setConteudo(' <p className="mensage-frete"> FRETE GRÁTIS </p><img src={free} alt="free" />')
-     }
     }
+
+    if (count <= 0) {
+      setContextState({ ...contextState, counter: "" });
+    }
+  }
+
+  function countSkuMore() {
+    const numberSku = count + 1;
+    setCount(numberSku);
+    setContextState({ ...contextState, counter: numberSku });
+
+    if (numberSku >= 10) {
+      setMensageFrete("mensagem-frete-gratis");
+      setConteudo(
+        ' <p className="mensage-frete"> FRETE GRÁTIS </p><img src={free} alt="free" />'
+      );
+    }
+  }
 
   return (
     <section className="productInfo">
+      <div className="breadcrumb">
+        <span>
+          <a href="#">Home /</a>
+          <a href="#">Masculino/</a>
+          <a href="#">Camisa</a>
+        </span>
+      </div>
       <div className="name-and-share">
         <h1>{props.text}</h1>
       </div>
@@ -79,7 +87,12 @@ export const ProductInfo = (props) => {
             </li>
           </ul>
         </div>
+
+        <div className="quantidade-de-unidade">
+          <span>Restam apenas poucas unidades</span>
+        </div>
       </div>
+
       <div className="quantidade">
         <p>
           <strong>QUANTIDADE</strong>
@@ -96,9 +109,9 @@ export const ProductInfo = (props) => {
           </div>
         </div>
 
-        <div className={mensageFrete}>  <p className="mensage-frete"> FRETE GRÁTIS </p>
-           <img src={free} alt="free" />
-         </div>
+        <div className={mensageFrete}>
+          <p className="mensage-frete"> FRETE GRÁTIS </p>
+        </div>
       </div>
       <div className="buybutton">
         <div className="buybutton-name">ADICIONAR À SACOLA</div>

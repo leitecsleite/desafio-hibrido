@@ -14,19 +14,15 @@ export const Slider = () => {
     fetch("https://fakestoreapi.com/products/")
       .then((response) => response.json())
       .then(setData);
-
-    console.log("olá");
   }, []);
 
   function handleLeftClick(e) {
     e.preventDefault();
-    console.log(carousel.current.offsetWidth);
     carousel.current.scrollLeft -= carousel.current.offsetWidth;
   }
 
   function handRigthtClic(e) {
     e.preventDefault();
-    console.log(carousel.current.offsetWidth);
     carousel.current.scrollLeft += carousel.current.offsetWidth;
   }
 
