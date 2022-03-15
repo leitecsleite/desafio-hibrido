@@ -9,13 +9,13 @@ export const ProductImages = ({ image }) => {
   function handleLeftClickSku(e) {
     e.preventDefault();
     carouselSkuImg.current.scrollLeft -=
-      carouselSkuImg.current.offsetWidth + 210;
+      carouselSkuImg.current.offsetWidth;
   }
 
   function handRigthtClicSku(e) {
     e.preventDefault();
     carouselSkuImg.current.scrollLeft +=
-      carouselSkuImg.current.offsetWidth + 120;
+      carouselSkuImg.current.offsetWidth ;
   }
 
   return (
